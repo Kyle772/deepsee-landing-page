@@ -6,54 +6,178 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: silver;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .no-wrap {
   white-space: nowrap;
 }
 
-.center {
-  text-align: center;
+.timer {
+  width: 100px;
+  height: 20px;
+  display: inline-block;
+  font-size: 50px;
+  font-weight: bold;
 }
 
-#hero-logo-image {
-  width: 102px;
-  height: 102px;
-  left: 46%;
-  top: 15%;
-  position: absolute;
+.timer-title {
+  font-size: 10px;
+  font-weight: 100;
+  clear: both;
+}
+
+/*header and nav bar*/
+
+#hero-nav-bar {
+  height: 40px;
+  margin-bottom: 50px;
+}
+
+#link-nav-list {
+  display: inline-block;
+  list-style-type: none;
+  float: right;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#social-media-nav-list {
+  display: inline-block;
+  list-style-type: none;
+  float: right;
+} 
+
+li {
+  display: inline;
+}
+
+
+#top-left-logo {
+  padding-top: 20px;
+  padding-left: 40px;
+  width: 129px;
+  height: 29px;
+  float: left;
 }
 
 #hero-image-header {
   background: url('../assets/img/hero-image-sea.jpg');
   background-size: cover;
   background-position: center;
-  height: 667px;
-  position: relative;
+  height: 800px;
+  z-index: 0;
 }
 
-#hero-text {
+#hero-content {
   color: white;
-  font-size: 1.4em;
-  font-weight: 100;
+  font-size: 2.1em;
   text-align: center;
-  max-width: 65%;
-  left: 17.5%;
-  top: 65%;
-  position: absolute;
+  z-index: 1;
 }
 
-@media (max-width: 800px) {
+#hero-text-wide {
+  font-weight: 100;
+  width: 75%;
+  max-width: 750px;
+  margin: 0 auto;
+  height: 126px;
+}
 
-  #hero-text {
-    font-size: 1em;
+#hero-text-thin {
+  font-weight: 100;
+  display: none;
+  width: 309.9px;
+  margin: 0 auto;
+  height: 140px;
+}
+
+#hero-logo-image {
+  width: 106px;
+  height: 106px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#countdown {
+  height: 100px;
+  min-width: 800px
+}
+
+#countdown-announcement {
+  font-weight: 100;
+  height: 40px;
+  margin-bottom: 70px;
+}
+
+#scroller {
+  padding-top: 89px;
+  height: 60px;
+}
+
+@media (max-width: 900px) {
+
+  #countdown {
+    min-width: 600px;
   }
 
+  #hero-logo-image {
+    margin-left: 0px;
+  }
+
+  #hero-content {
+    font-size: 1.5em;
+  }
 
 }
 
 @media (max-width: 600px) {
+
+  /*header nad nav bar*/
+
+  #countdown-announcement {
+    display: none;
+  }
+
+  #countdown {
+    min-width: 300px;
+  }
+
+  #hero-content {
+    font-size: 1.2em;
+  }
+
+  #hero-image-header {
+    height: 667px;
+  }
+
+  #top-left-logo {
+    width: 129px;
+    height: 29px;
+    margin-left: -10px;
+    float: inherit;
+    padding-left: 0px;
+  }
+
+  #hero-text-wide {
+    display: none;
+  }
+
+  #hero-text-thin {
+    display: inherit;
+  }
+
+  #scroller {
+    padding-top: 73px;
+  }
 
 
 }
