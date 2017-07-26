@@ -1,1 +1,5 @@
-console.log('wooo');
+document.addEventListener('DOMContentLoaded', () => {
+
+console.log('zzz');
+
+});
