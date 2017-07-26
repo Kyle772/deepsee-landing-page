@@ -40,5 +40,6 @@ let x = setInterval(() => {
 }, 1000);
 
 // smooth scrolling
+// TODO home about and down arrow on the header image, smooth scroll
 
 });
