@@ -387,7 +387,7 @@ li {
   height: 100px;
 }
 
-#features-container-row1, #features-container-row2, #features-container-row3 {
+#features-container-row2, #features-container-row3 {
   height: 150px;
   display: flex;
   width: 70%;
@@ -425,7 +425,16 @@ li {
 
 @media (max-width: 1000px) {
 
-  #features-container-row1, #features-container-row2, #features-container-row3 {
+  #features-container-row1 {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #features-container-row2, #features-container-row3 {
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -436,7 +445,7 @@ li {
   }
 
   #features {
-    height: 1600px;
+    height: 1400px;
   }
 
   #blue-logo-height {
@@ -444,6 +453,15 @@ li {
     height: 100px;
   }
 
+}
+
+@media only screen 
+  and (max-width: 1000px) 
+  and (orientation: landscape) { 
+
+  #what-we-offer {
+    height: 700px;
+  }
 
 }
 
