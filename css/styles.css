@@ -387,7 +387,7 @@ li {
   height: 100px;
 }
 
-#features-container-row2, #features-container-row3 {
+#features-container-row1, #features-container-row2, #features-container-row3 {
   height: 150px;
   display: flex;
   width: 70%;
@@ -415,15 +415,19 @@ li {
 
 #feature7 {
   order: 1;
-  width: ;
+  width: 100px;
   padding: 20px;
+}
+
+#bottom-feature {
+  padding-left: 20px;
 }
 
 .feature-big-title {
   height: 40px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
 
   #features-container-row1 {
     height: 300px;
@@ -448,20 +452,20 @@ li {
     height: 1400px;
   }
 
+  #feature7 {
+    order: 1;
+    width: 100%;
+  }
+
   #blue-logo-height {
     padding-top: 30px;
     height: 100px;
+    margin: 0 auto;
   }
 
 }
 
-@media only screen 
-  and (orientation: landscape) { 
-
-  #what-we-offer {
-    background-color: red;
-    height: 700px;
-  }
+@media (max-width: 1000px) and (orientation: landscape) { 
 
   #features-container-row1 {
     height: 300px;
@@ -470,7 +474,6 @@ li {
     width: 70%;
     margin: 0 auto;
     text-align: center;
-    background-color: red;
   }
 
   #features-container-row2, #features-container-row3 {
