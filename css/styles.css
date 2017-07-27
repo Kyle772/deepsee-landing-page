@@ -461,11 +461,12 @@ li {
     padding-top: 30px;
     height: 100px;
     margin: 0 auto;
+    margin-left: -35px;
   }
 
 }
 
-@media (max-width: 1000px) and (orientation: landscape) { 
+@media (max-width: 900px) and (orientation: landscape) { 
 
   #features-container-row1 {
     height: 300px;
