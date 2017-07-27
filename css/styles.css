@@ -337,7 +337,30 @@ li {
   padding: 20px;
 }
 
+@media only screen 
+    and (min-device-width : 375px)
+    and (max-device-width : 667px)
+    and (width : 375px)
+    and (height : 559px)
+    and (orientation : portrait) 
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 375/559)
+    and (device-pixel-ratio : 2)
+    and (-webkit-min-device-pixel-ratio : 2)
+  {
+    #blue-logo-height {
+      display: none;
+    }
+}
+
 @media (max-width: 900px) {
+  #what-we-offer {
+    height: 700px;
+  }
+}
+
+@media (max-width: 700px) {
 
   #what-we-offer {
     height: 900px;
@@ -426,6 +449,11 @@ li {
   height: 40px;
 }
 
+#blue-logo-height {
+  padding-top: 30px;
+  height: 100px;
+}
+
 @media (max-width: 900px) {
 
   #features-container-row1 {
@@ -435,6 +463,7 @@ li {
     width: 70%;
     margin: 0 auto;
     text-align: center;
+    padding-top: 70px;
   }
 
   #features-container-row2, #features-container-row3 {
@@ -465,27 +494,11 @@ li {
 
 }
 
-@media (orientation: landscape) { 
+@media (max-width: 600px) {
 
-  #features-container-row1 {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
+  #features {
+    height: 1500px;
   }
-
-  #features-container-row2, #features-container-row3 {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 150px;
-  }
-
 }
 
 /*workflow*/
