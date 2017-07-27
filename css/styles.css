@@ -456,11 +456,31 @@ li {
 }
 
 @media only screen 
-  and (max-width: 1000px) 
   and (orientation: landscape) { 
 
   #what-we-offer {
+    background-color: red;
     height: 700px;
+  }
+
+  #features-container-row1 {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: red;
+  }
+
+  #features-container-row2, #features-container-row3 {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
   }
 
 }
