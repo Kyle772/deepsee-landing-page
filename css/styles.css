@@ -127,7 +127,7 @@ li {
 }
 
 #scroller-image {
-  padding-top: 89px;
+  padding-top: 79px;
   height: 60px;
 }
 
@@ -272,18 +272,83 @@ li {
 
 /*what do we offer */
 
+.check-mark {
+  height: 40px;
+}
+
+.offer-titles {
+  height: 30px;
+}
+
+.offer-infos {
+  font-size: .4em;
+  height: 150px;
+}
+
 #what-we-offer {
-  height: 400px;
+  color: white;
+  height: 1000px;
   background-image: linear-gradient(-180deg, #297FCA 0%, #1D5D94 100%);
+}
+
+#what-we-offer-title {
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 20px;
+  height: 50px;
+  font-weight: 100; 
+  font-size: 2em;
 }
 
 #offer-screenshot-container {
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
 
 #offer-screenshot {
   width: 100%;
   height: auto;
 }
+
+#info-box-container {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 200px;
+}
+
+#item1 {
+  order: 1;
+  height: 100px;
+  padding: 20px;
+}
+
+#item2 {
+  order: 2;
+  height: 100px;
+  padding: 20px;
+}
+
+#item3 {
+  order: 3;
+  height: 100px;
+  padding: 20px;
+}
+
+@media (max-width: 700px) {
+  #what-we-offer {
+    height: 900px;
+  }
+
+  #info-box-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+  }
+}
+
+
 
