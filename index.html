@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>DeepSee.io</title>
   <!-- detect viewport  -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>DeepSee.io</title>
-  <!-- styles/ -->
+  <!-- styles -->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- font awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
   <!-- js -->
+  <script type="text/javascript" src="app/smooth-scroll.js"></script>
   <script type="text/javascript" src="app/app.js"></script>
   <!-- moment -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
@@ -18,7 +20,7 @@
 
   <!-- hero image header -->
   
-  <div id="hero-image-header">
+  <div name="hero-image-header" id="hero-image-header">
 
     <div id="hero-content">
 
@@ -34,8 +36,8 @@
         </ul>
 
         <ul id="link-nav-list">
-          <li><a id="home-link" class="nav-a" href="#">HOME</a></li>
-          <li><a id="about-link" class="nav-a" href="#">ABOUT</a></li>
+          <li><a id="home-link" class="nav-a" href="#hero-image-header">HOME</a></li>
+          <li><a id="about-link" class="nav-a" href="#explore-deepsee">ABOUT</a></li>
           <li><a class="nav-a" href="assets/pdf/whitepaper.pdf" download>WHITEPAPER</a></li>
           <li><a class="nav-a" href="https://medium.com/@deepseeio">BLOG</a></li>
         </ul>
@@ -104,7 +106,7 @@
 
       </div>
 
-      <a id="scroller-link" href="#"><img id="scroller-image" src="assets/img/scroll-arrow.svg"/></a>
+      <a id="scroller-link" href="#explore-deepsee"><img id="scroller-image" src="assets/img/scroll-arrow.svg"/></a>
     
     </div>
 
@@ -112,18 +114,30 @@
 
   <!-- explore deepsee -->
 
-  <div id="explore-deepsee">
+  <div name="explore-deepsee" id="explore-deepsee">
 
     <div id="explore-deepsee-title">
-    jsdhaksjdhakjsdhj
+      <span class="no-wrap">Explore the DeepSee</span>
     </div>
+
+    <img id="small-bar" src="assets/img/small-bar.png"/>
 
     <div id="explore-deepsee-blurb">
-    asjdbakjsdaskjdnaskdna
+      DeepSee seeks to be the platform at the center of media analysis, discovery, verification, clarification and monetization. DeepSee does this by weaving the most important mediums of communication into a symbiotic network that incentivizes the best people to get involved in a wide variety of roles. Whether you're looking to create, organize, communicate, contribute--it doesn't matter There is a place for you to not only make a difference, but make a name and get rewarded. 
     </div>
 
-    <button id="whitepaper-button"><img id="whitepaper-button-icon" src="assets/img/scroll-arrow.svg"/>WHITEPAPER
-    </button>
+    <div>
+      <a href="assets/pdf/whitepaper.pdf" id="whitepaper-button"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>  VIEW OUR WHITEPAPER</a>
+    </div>
+  </div>
+
+  <!-- what we offer -->
+
+  <div id="what-we-offer">
+
+  <div id="offer-screenshot-container">
+    <img id="offer-screenshot" src="/assets/img/deepsee-screenshots.png"/>
+  </div>
   </div>
 
 </body>
