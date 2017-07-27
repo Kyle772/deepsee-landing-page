@@ -29,8 +29,6 @@ li {
 
 /*header and nav bar*/
 
-/*top-most nav bar*/
-
 .nav-a {
   text-decoration: none;
   color: white;
@@ -339,7 +337,8 @@ li {
   padding: 20px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+
   #what-we-offer {
     height: 900px;
   }
@@ -466,7 +465,7 @@ li {
 
 }
 
-@media (max-width: 900px) and (orientation: landscape) { 
+@media (orientation: landscape) { 
 
   #features-container-row1 {
     height: 300px;
