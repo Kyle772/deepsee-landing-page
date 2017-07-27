@@ -208,6 +208,7 @@ li {
 
 #explore-deepsee-blurb {
   font-size: .7em;
+  font-weight: 100;
   line-height: 20px;
   height: 150px;
   width: 50%;
@@ -293,7 +294,7 @@ li {
 
 #what-we-offer-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   padding-top: 20px;
   height: 50px;
   font-weight: 100; 
@@ -346,7 +347,12 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 600px;
+    height: 450px;
+  }
+
+  #offer-screenshot {
+    width: 100%;
+    height: 200px;
   }
 }
 
