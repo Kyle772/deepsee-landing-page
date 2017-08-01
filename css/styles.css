@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     margin: 0;
+    overflow-x: hidden;
 }
 
 @media(max-width: 700px){
@@ -435,6 +436,7 @@ li {
 
 #blue-logo-height {
     margin: 30px;
+    margin-top: 60px;
     box-sizing: border-box;
     height: 150px;
     width: 150px;
@@ -467,6 +469,7 @@ li {
     #blue-logo-height {
         margin-top: 30px;
         margin: 0 auto;
+        margin-top: 60px;
         margin-left: -35px;
     }
     #bottom-feature {
@@ -487,15 +490,80 @@ li {
 /*workflow*/
 
 #workflow {
+    position: relative;
     background-color: #1E5E96;
-    height: 690px;
+    padding: 30px 0;
 }
 
+#workflow .full-width-image {
+    width: 100%;
+    margin: 60px 0;
+}
 
-/*members*/
+#workflow .feature-big-title {
+    position: relative;
+    width: auto;
+    margin: auto;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    height: 50px;
+    font-weight: 100;
+    font-size: 2em;
+}
 
-#members {
-    height: 1000px;
+/*team*/
+
+#team {
+    background-color: white;
+    color: #1E5E96;
+}
+
+#team .feature-big-title {
+    position: relative;
+    font-weight: 400;
+    width: auto;
+    margin: 15px auto;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    height: 50px;
+    font-size: 2em;
+}
+
+#team .container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+#team .container .person {
+    width: 25%;
+    min-width: 150px;
+    flex-shrink: 0;
+    margin: 30px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+#team .container .person h5 {
+    font-weight: 500;
+    font-size: .8em;
+    margin-top: -1em;
+}
+
+#team .container .person p {
+    font-weight: 500;
+    font-size: .8em;
+    margin-top: -1em;
+}
+
+#team  .container .person img {
+    width: 80%;
 }
 
 
@@ -503,7 +571,134 @@ li {
 
 #contact {
     background-color: #F4F9FD;
-    height: 400px;
+    color: #1E5E96;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10% 60px 10%;
+}
+
+#contact .feature-big-title {
+    position: relative;
+    font-weight: 400;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    height: 50px;
+    font-size: 2em;
+}
+
+#contact > div {
+    width: 50%;
+    min-width: 300px;
+    flex-shrink: 0;
+}
+
+#contact .social {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+#contact .social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+#contact .social a img {
+    width: 45px;
+}
+
+#contact .investors .hollow-button {
+    padding: 10px 25px;
+    border: solid 2px #3b5998;
+    color: #3b5998;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-right: 15px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    #contact .feature-big-title {
+        text-align: center;
+    }
+    #contact .social {
+        justify-content: center;
+    }
+    #contact > div {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    #contact .investors .hollow-button {
+        margin: 15px;
+    }
+    #contact > div {
+        margin: auto;
+        width: 100%;
+        margin-bottom: 60px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    #contact .investors {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #contact .investors .hollow-button {
+        width: 80px;
+    }
+    #contact {
+        padding: 30px 0 60px 0;
+    }
+}
+
+#contact .investors .hollow-button:hover {
+    border-color: cornflowerblue;
+    color: cornflowerblue;
+}
+
+#contact .newsletter .email {
+    padding: 10px;
+}
+
+#contact .newsletter .button {
+    padding: 10px;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    outline: none;
+    border: none;
+    color: white;
+}
+
+#contact .newsletter .button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
 
 
@@ -512,4 +707,12 @@ li {
 #footer {
     background-color: #1E5E96;
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+#footer img {
+    height: 30px;
 }
